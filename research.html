@@ -1,1 +1,51 @@
+    <h1>Research</h1>
 
+    <p class="intro">
+      My research focuses on fairness-aware medical AI, with particular emphasis
+      on mitigating skin tone bias in dermatological image analysis using
+      generative models.
+    </p>
+
+
+
+    <section class="research-section">
+
+      <h2>Undergraduate Thesis</h2>
+
+      <p class="subtitle">
+        Mitigating Demographic Bias in Skin Lesion Classification Using GANs
+      </p>
+
+      <p>
+        Public dermatology datasets are heavily skewed toward lighter skin tones,
+        leading to biased diagnostic performance for darker skin populations.
+        My undergraduate thesis investigates dataset-level bias mitigation
+        through synthetic data generation rather than solely model-level fixes.
+      </p>
+
+    
+      <h3>Key Contributions</h3>
+      <ul>
+        <li>Developed Pix2Pix and CycleGAN-based pipelines for skin lesion image synthesis</li>
+        <li>Controlled image generation across six Fitzpatrick skin tone categories</li>
+        <li>Designed semantic maps encoding skin tone via background color</li>
+        <li>Integrated a skin tone classifier as an auxiliary GAN loss</li>
+        <li>Built preprocessing pipelines for background and hair removal</li>
+      </ul>
+
+      <h3>Methodology Overview</h3>
+      <p>
+        The study combines paired (Pix2Pix) and unpaired (CycleGAN) image-to-image
+        translation frameworks with a classifier-guided feedback mechanism.
+        Generated images are evaluated using downstream skin disease
+        classification performance across different skin tones.
+      </p>
+
+
+        <h3>Key Observations</h3>
+      <p>
+        While the proposed models successfully control global skin tone appearance,
+        preserving fine-grained lesion characteristics remains challenging.
+        Clinical feedback highlighted the risk of diagnostic feature distortion,
+        emphasizing the limitations of current GAN-based augmentation.
+      </p>
