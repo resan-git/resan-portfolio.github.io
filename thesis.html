@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Undergraduate Thesis | Nazmus Sadat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="thesis.html">Thesis</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <h1>Undergraduate Thesis</h1>
+
+  <h2>
+    Skin Tone–Aware Generation of Dermatological Images Using GAN-Based Models
+  </h2>
+
+  <p class="subtitle">
+    B.Sc. in Biomedical Engineering | Bangladesh University of Engineering and Technology (BUET)
+  </p>
+
+  <p class="intro">
+    This thesis investigates the problem of racial and skin-tone bias in
+    dermatological image datasets and proposes a generative deep learning
+    framework to synthesize skin lesion images across diverse Fitzpatrick skin
+    tones while preserving lesion-specific characteristics.
+  </p>
+
+  <section class="thesis-section">
+    <h3>Research Motivation</h3>
+
+    <p>
+      Most publicly available dermatology datasets are heavily biased toward
+      lighter skin tones, resulting in reduced diagnostic performance for darker
+      skin populations. This imbalance limits the fairness and generalizability
+      of AI-based diagnostic systems.
+    </p>
+
+    <p>
+      The goal of this thesis is to address this imbalance by generating
+      skin-tone–diverse lesion images that preserve medically relevant lesion
+      features while varying only the surrounding skin tone.
+    </p>
+  </section>
+
+  <section class="thesis-section">
+    <h3>Methodology</h3>
+
+    <ul>
+      <li>Used Pix2Pix and CycleGAN architectures for image-to-image translation</li>
+      <li>Generated semantic maps encoding lesion region and target skin tone</li>
+      <li>Applied Fitzpatrick skin tone labeling (1–6) for controlled generation</li>
+      <li>Integrated a pretrained skin tone classifier to enforce tone consistency</li>
+      <li>Performed background removal and hair artifact reduction for robustness</li>
+    </ul>
+
+    <figure>
+      <img src="images/thesis_pipeline.png" alt="Thesis GAN pipeline">
+      <figcaption>
+        Overview of the GAN-based pipeline for skin tone–controlled lesion image generation.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="thesis-section">
+    <h3>Key Contributions</h3>
+
+    <ul>
+      <li>Proposed a controllable image generation framework for six Fitzpatrick skin tones</li>
+      <li>Preserved lesion morphology while varying skin tone appearance</li>
+      <li>Introduced classifier-guided loss for tone-aware generation</li>
+      <li>Analyzed the impact of synthetic data on downstream disease classification</li>
+    </ul>
+  </section>
+
+  <section class="thesis-section">
+    <h3>Results & Observations</h3>
+
+    <p>
+      The proposed model successfully generated skin lesion images across
+      different skin tones. However, expert clinical feedback indicated that
+      while skin tone variation was achieved, certain disease-specific visual
+      features were not always preserved with sufficient fidelity.
+    </p>
+
+    <p>
+      This highlights the limitations of current GAN-based approaches in
+      medical image synthesis and underscores the importance of
+      clinician-in-the-loop evaluation.
+    </p>
+  </section>
+
+  <section class="thesis-section">
+    <h3>Thesis Status</h3>
+
+    <p>
+      This work was completed as part of the undergraduate thesis requirement.
+      A formal thesis defense presentation was conducted, and the work is
+      currently being refined for potential extension in future graduate
+      research.
+    </p>
+  </section>
+
+</main>
+
+</body>
+</html>
 
