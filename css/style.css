@@ -130,3 +130,20 @@ iframe {
   color: #555;
 }
 
+
+.thesis-section {
+  margin-top: 50px;
+}
+
+.thesis-section h3 {
+  margin-bottom: 15px;
+}
+
+.thesis-section ul {
+  margin-left: 20px;
+}
+
+.thesis-section li {
+  margin-bottom: 8px;
+}
+
