@@ -222,6 +222,87 @@
 
 </section>
 
+<section class="project">
+
+  <h2>
+    ECG & EMG Acquisition System with Mobile App Interface
+  </h2>
+
+  <p class="subtitle">
+    Biomedical Signal Processing & PCB Design | Level 3 Term 1
+  </p>
+
+  <p>
+    <strong>Problem:</strong>
+    Biopotential signals such as ECG and EMG have very low amplitudes and are
+    highly susceptible to motion artifacts and electromagnetic interference,
+    making accurate acquisition and interpretation challenging in portable
+    systems.
+  </p>
+
+  <p>
+    <strong>Approach:</strong>
+    We designed two optimized signal acquisition chains for ECG and EMG,
+    integrating precision amplification, multi-stage filtering, embedded
+    processing, and wireless data transmission to a mobile application for
+    real-time monitoring.
+  </p>
+
+  <p>
+    <strong>Key Engineering Innovations:</strong>
+  </p>
+  <ul>
+    <li>Low-noise signal amplification using AD620 instrumentation amplifier</li>
+    <li>Custom gain design tailored for ECG (~626) and EMG (~278.78)</li>
+    <li>5th-order high-pass and low-pass filters for band-limiting</li>
+    <li>Passive twin-T notch filter for 50/60 Hz powerline noise suppression</li>
+  </ul>
+
+  <p>
+    <strong>Signal Processing & Embedded Logic:</strong>
+    An Arduino Uno was programmed to perform peak detection on ECG signals for
+    heart rate estimation and threshold-based analysis on EMG signals to
+    distinguish between muscle contraction and relaxation events.
+  </p>
+
+  <p>
+    <strong>Simulation & Implementation:</strong>
+    Circuit designs were validated in TinaTI through transient and
+    frequency-domain analyses before PCB implementation. While simulations
+    showed excellent bandwidth conformity, hardware testing revealed practical
+    PCB challenges such as soldering faults and short circuits.
+  </p>
+
+  <p>
+    <strong>Outcome:</strong>
+    The system demonstrated successful real-time heart rate tracking and muscle
+    activity detection, wirelessly transmitting processed data to a mobile
+    interface via Bluetooth.
+  </p>
+
+  <p>
+    <strong>Tools & Technologies:</strong>
+    AD620 instrumentation amplifier, Arduino Uno, HC-05 Bluetooth module,
+    TinaTI simulation, PCB design and fabrication, ECG & EMG surface electrodes.
+  </p>
+
+  <figure>
+    <img src="images/ecg_emg_system.png" alt="ECG and EMG acquisition system">
+    <figcaption>
+      ECG and EMG signal acquisition system showing amplification, filtering,
+      PCB implementation, and mobile app-based visualization.
+    </figcaption>
+  </figure>
+
+  <p>
+    <strong>Future Scope:</strong>
+    Improving PCB layout robustness, integrating ECG and EMG modes into a single
+    compact circuit, and enhancing mechanical housing for reliable mobile use.
+  </p>
+
+</section>
+
+
 
   
 <h2 class="category">AI & Software Systems</h2>
